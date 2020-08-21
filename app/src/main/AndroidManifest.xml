@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fauzi.testfacebookads">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.fauzi.testfacebookads.ActivityBase"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeAds"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:theme="@style/ThemeSplash"
+            android:name="com.fauzi.testfacebookads.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/ThemeDefault"
+            android:name="com.fauzi.testfacebookads.ActivityHome"
+            android:label="Home Page" />
+
+        <activity
+            android:name="com.fauzi.testfacebookads.Ad_Banner"
+            android:label="Banner Ads" />
+
+        <activity
+            android:name="com.fauzi.testfacebookads.Ad_Interstitial"
+            android:label="Interstitial Ad" />
+
+        <activity
+            android:name="com.fauzi.testfacebookads.Ad_Rectangle"
+            android:label="Rectangle Ad" />
+
+        <activity
+            android:name="com.fauzi.testfacebookads.Ad_Reward"
+            android:label="Reward Ad" />
+
+    </application>
+
+</manifest>
